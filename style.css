@@ -10,10 +10,14 @@
 body {
     background-color: #D7D7D7;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav {
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    z-index: 15;
     display: flex;
     width: 40vw;
 }
@@ -44,19 +48,81 @@ nav ul li {
     font-size: 15px;
 }
 
-.hero-section{
+.hero-section {
     display: flex;
-
+    position: relative;
 }
 
 .rect-1 {
+    position: relative;
     width: 100vw;
     height: 100vh;
-    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.intro {
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+}
+
+.intro h1 span {
+    display: block;
+    margin-top: 8px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.intro p {
+    margin-top: 2px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 100px;
+    height: 60px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #555;
+    margin-right: 16px;
+    transition: color 0.3s;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+
 .rect-2 {
-    top: -9%;
+    top: -30%;
     right: -62px;
     position: absolute;
     width: 61vw;
@@ -66,4 +132,58 @@ nav ul li {
     background-color: #000000;
     transform: rotateZ(10deg);
     overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner::before {
+    content: 'IT';
+    position: absolute;
+    top: 0;
+    right: 3%;
+    transform: rotateZ(10deg);
+    font-family: 'Anton', sans-serif;
+    font-size: 220px;
+    color: rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.banner__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+}
+
+.banner__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.banner__button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.banner__button:hover {
+    background-color: #e65c00;
 }
