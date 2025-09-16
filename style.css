@@ -320,3 +320,39 @@ section{
     font-weight: 600;
     letter-spacing: 2px;
 }
+
+footer{
+    margin: 80px 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: #000000;
+}
+
+footer img{
+    width: 24px;
+    height: 24px;
+}
+
+.back-to-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: small;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.socials-icons-foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
