@@ -5,8 +5,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    transition: all 200ms ease-in-out;
 }
-p{
+
+p {
     padding: 0;
 }
 
@@ -38,7 +40,12 @@ nav ul li {
     font-weight: 700;
     color: #FFFFFF;
     font-size: 15px;
+    cursor: pointer;
+}
 
+nav ul li:hover {
+    text-decoration: underline;
+    color: #D7D7D7;
 }
 
 .contact-btn {
@@ -49,6 +56,13 @@ nav ul li {
     border: none;
     border-radius: 24px;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    color: #222;
+    background-color: #D7D7D7;
+
 }
 
 .hero-section {
@@ -191,7 +205,7 @@ nav ul li {
     background-color: #e65c00;
 }
 
-section{
+section {
     padding: 30px;
     margin-top: 70px;
     display: flex;
@@ -202,7 +216,7 @@ section{
 }
 
 
-.about-me>p{
+.about-me>p {
     width: 50%;
 }
 
@@ -214,19 +228,20 @@ section{
     padding: 15px 30px;
 }
 
-.hr-bars{
+.hr-bars {
     width: 150px;
     height: 2px;
     display: flex;
     justify-content: space-around;
 }
-.hr-bar{
+
+.hr-bar {
     width: 50px;
     height: 2px;
     background-color: #000000;
 }
 
-.explore{
+.explore {
     font-size: 1.4rem;
     font-weight: 600;
     padding: 0px 20px;
@@ -234,7 +249,7 @@ section{
     border-right: 2px solid #000000;
 }
 
-.about-info{
+.about-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -242,18 +257,18 @@ section{
     gap: 60px;
 }
 
-.card-1{
-        width: 50%;
+.card-1 {
+    width: 50%;
 }
 
-.card-head-txt{
+.card-head-txt {
     font-size: 1.5rem;
     letter-spacing: 2.2px;
     font-weight: 650;
     margin-bottom: 15px;
 }
 
-.skills-info{
+.skills-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -261,16 +276,16 @@ section{
     flex-wrap: wrap;
 }
 
-.card-2{
+.card-2 {
     width: 8%;
 }
 
-.card-2 img{
+.card-2 img {
     width: 100%;
     object-fit: contain;
 }
 
-.portfolio-info{
+.portfolio-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -278,50 +293,68 @@ section{
     flex-wrap: wrap;
 }
 
-.card-3{
+.card-3 {
     margin: 10px;
     width: 30%;
 }
 
-.card-3 img{
+.card-3 img {
     width: 100%;
     object-fit: contain;
 }
 
-.contact-info{
+.contact-info {
     width: 35%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.contact-info input{
+.contact-info input {
     border: none;
     border-left: 4px solid #000000;
     border-bottom: 4px solid #000000;
     background-color: #D7D7D7;
     padding: 6px 10px;
 }
-.contact-info input:active{
-    outline: none;
-}
-.contact-info input:focus{
+
+.contact-info input:active {
     outline: none;
 }
 
-.message{
+.contact-info input:focus {
+    outline: none;
+}
+
+.message {
+    background-color: #D7D7D7;
+    padding: 10px;
     height: 100px;
+    border: none;
+    border-left: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    overflow: hidden;
 }
 
-.submit-btn{
+.message:focus{
+    outline: none;
+}
+
+.submit-btn {
     border-left: 2px solid #000000;
     border-right: 2px solid #000000;
     padding: 4px 20px;
     font-weight: 600;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
-footer{
+.submit-btn:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+footer {
     margin: 80px 0px;
     padding: 30px;
     display: flex;
@@ -332,25 +365,33 @@ footer{
     background-color: #000000;
 }
 
-footer img{
+footer img {
     width: 24px;
     height: 24px;
+    cursor: pointer;
+
 }
 
-.back-to-top{
+.back-to-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-footer p{
+.back-to-top p:hover{
+    color: #D7D7D7;
+    text-decoration: underline;
+}
+
+footer p {
     font-size: small;
     font-weight: 500;
     color: #FFFFFF;
 }
 
-.socials-icons-foot{
+.socials-icons-foot {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
