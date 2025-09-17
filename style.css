@@ -497,5 +497,13 @@ nav ul li{
 }
 .contact-info{
     width: 50%;
+    gap: 25px;
+}
+}
+
+@media screen and (max-width: 350px) {
+    .contact-info{
+    width: 60%;
+    padding-top: 4px ;
 }
 }
